@@ -5,6 +5,20 @@ function getIt() {
   });
 }
 
+function frameIt(){
+  $('img').on('load', function() {
+    return $('.tasty');
+  });
+}
+
+function pressIt() {
+  $('input').on('keydown', function(key){
+    if(key.which == 71){
+      alert("You have press G");
+    }
+  });
+}
+
 $(document).ready(function(){
 
 
